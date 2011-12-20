@@ -17,3 +17,17 @@ Then /^(?:|I )should see "([^"]*)"$/ do |text|
     assert page.has_content?(text)
   end
 end
+
+
+Given /^there is a location named "([^"]*)"$/ do |name|
+  Factory(:location, :name => name)
+end
+
+When /^I change the location name to "([^"]*)"$/ do |name|
+  visit(locations_path)
+  within("ul li:nth-child(1)") do
+    click_link "Edit"
+  end
+  fill_in('Name', :with => name)
+  click_button('Update')
+end

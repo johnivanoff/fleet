@@ -1,2 +1,11 @@
-<h1>Locations#index</h1>
-<p>Find me in app/views/locations/index.html.erb</p>
+<h1>Locations</h1>
+<ul>
+<% @locations.each do |location| %>
+  <li>
+    <%= location.name %>
+    <%= link_to 'Show', location %>
+    <%= link_to 'Edit', edit_location_path(location) %>
+    <%= link_to 'Destroy', location, confirm: 'Are you sure?', method: :delete %>
+  </li>
+<% end %>
+</ul>
