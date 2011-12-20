@@ -31,3 +31,17 @@ When /^I change the location name to "([^"]*)"$/ do |name|
   fill_in('Name', :with => name)
   click_button('Update')
 end
+
+Given /^the following (.+) records?$/ do |factory, table|
+  table.hashes.each do |hash|
+    Factory(factory, hash)
+  end
+end
+
+When /^I delete the (\d+)(?:st|nd|rd|th) (.+)$/ do |pos, model|
+  tempPath = '/' + model + 's'
+  visit tempPath # assets_path
+  within("ul li:nth-child(#{pos.to_i})") do
+    click_link "Destroy"
+  end
+end
