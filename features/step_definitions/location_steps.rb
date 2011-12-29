@@ -45,3 +45,12 @@ When /^I delete the (\d+)(?:st|nd|rd|th) (.+)$/ do |pos, model|
     click_link "Destroy"
   end
 end
+
+When /^(?:|I )select "([^"]*)" from "([^"]*)"$/ do |value, field|
+  select(value, :from => field)
+end
+
+Given /^I am on the "([^"]*)" page$/ do |location|
+  visit(location_path(Location.find_by_name(location)))
+end
+

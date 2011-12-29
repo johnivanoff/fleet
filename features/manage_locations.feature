@@ -26,3 +26,22 @@ Feature: Manage locations
     And I should see "location 2"
     And I should see "location 4"
 
+
+  Scenario: Register a child location
+    Given the following location record
+      | name       |
+      | location 1 |
+	And I am on new location page
+	When I fill in "Name" with "location 2"
+	And I select "location 1" from "Parent"
+	And press "Create"
+	Then I should see "location 2"
+
+  Scenario: List a location and it's children
+    Given the following location records
+      | name       | parent_id |
+      | location 1 |           |
+      | location 2 | 1         |
+	And I am on the "location 1" page
+	Then I should see "location 1"
+	And I should see "location 2"
