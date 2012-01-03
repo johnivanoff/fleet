@@ -11,15 +11,37 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
+  <p>
+    <%= f.label :name %>
     <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :parent_id %><br />
+  </p>
+
+  <p>
+    <%= f.label :street_1 %>
+    <%= f.text_field :street_1 %>
+  </p>
+  <p>
+    <%= f.label :street_2 %>
+    <%= f.text_field :street_2 %>
+  </p>
+  <p>
+    <%= f.label :city %>
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :state %>
+    <%= f.text_field :state %>
+  </p>
+  <p>
+    <%= f.label :post_code %>
+    <%= f.text_field :post_code %>
+  </p>
+
+  <p>
+    <%= f.label :parent_id %>
     <%= collection_select(:location, :parent_id, Location.all, :id, :name, {:include_blank => 'None'}) %>
-  </div>
-  <div class="actions">
+  </p>
+  <p>
     <%= f.submit %>
-  </div>
+  </p>
 <% end %>
