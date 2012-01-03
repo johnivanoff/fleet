@@ -1,11 +1,11 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-en:
+es:
 
     locations:
         index:
-            new:        "Add a new location."
+            new:        "Añadir una nueva ubicación."
         form:
             state:      "State"
-            post_code:  "Zip Code"
+            post_code:  "Postal Code"
