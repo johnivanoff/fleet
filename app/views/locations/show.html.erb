@@ -1,8 +1,16 @@
-<p id="notice"><%= notice %></p>
+<% if @location.parent.present? %>
+	<p><%= link_to 'view parent', @location.parent %></p>
+<% end %>
 
 <p>
-  <b>Name:</b>
-  <%= @location.name %>
+  <b><%= @location.name %></b><br/>
+  <%= @location.street_1 %><br/>
+	<% if @location.street_2? %>
+		<%= @location.street_2 %><br/>
+	<% end %>
+  <%= @location.city %>
+  <%= @location.state %>,
+  <%= @location.post_code %>
 </p>
 
 <% if @location.children.present? %>
