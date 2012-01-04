@@ -5,7 +5,17 @@ en:
 
     locations:
         index:
-            new:        "Add a new location."
+            new:            "Add a new location."
+            location_title: "Locations"
+        new:
+            location_title: "New Location"
+            back_html:      "Back"
         form:
-            state:      "State"
-            post_code:  "Zip Code"
+            name:           "Name"
+            street_1:       "Address 1"
+            street_2:       "Address 2"
+            city:           "City"
+            state:          "State"
+            post_code:      "Zip Code"
+            parent_id:      "Parent Comapny"
+            create_html:    "Create Location"

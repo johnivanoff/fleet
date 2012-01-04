@@ -12,20 +12,20 @@
   <% end %>
 
   <p>
-    <%= f.label :name %>
+    <%= f.label t('.name') %>
     <%= f.text_field :name %>
   </p>
 
   <p>
-    <%= f.label :street_1 %>
+    <%= f.label t('.street_1') %>
     <%= f.text_field :street_1 %>
   </p>
   <p>
-    <%= f.label :street_2 %>
+    <%= f.label t('.street_2') %>
     <%= f.text_field :street_2 %>
   </p>
   <p>
-    <%= f.label :city %>
+    <%= f.label t('.city') %>
     <%= f.text_field :city %>
   </p>
   <p>
@@ -38,10 +38,10 @@
   </p>
 
   <p>
-    <%= f.label :parent_id %>
-    <%= collection_select(:location, :parent_id, Location.all, :id, :name, {:include_blank => 'None'}) %>
+    <%= f.label t('.parent_id') %>
+    <%= collection_select(:location, :parent_id, Location.all, :id, :name, {:include_blank => '---'}) %>
   </p>
   <p>
-    <%= f.submit %>
+	<%= button_to t('.create_html') %>
   </p>
 <% end %>

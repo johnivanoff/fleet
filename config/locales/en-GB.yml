@@ -5,7 +5,17 @@ en-GB:
 
     locations:
         index:
-            new:        "Add a new location, mate."
-        form:
-            state:      "County"
-            post_code:  "Post Code"
+            new:            "Add a new location, mate."
+            location_title: "Locations"
+        new:
+            location_title: "New Location"
+            back_html:      "Back"
+        form:    
+            name:           "Name"
+            street_1:       "Address 1"
+            street_2:       "Address 2"
+            city:           "City"
+            state:          "County"
+            post_code:      "Post Code"
+            parent_id:      "Parent Comapny"
+            create_html:    "Create Location"

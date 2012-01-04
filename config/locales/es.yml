@@ -5,7 +5,17 @@ es:
 
     locations:
         index:
-            new:        "Añadir una nueva ubicación."
+            new:            "Añadir una nueva ubicación."
+            location_title: "Ubicaciones"
+        new:
+            location_title: "Nueva Ubicación"
+            back_html:      "Atrás"
         form:
-            state:      "State"
-            post_code:  "Postal Code"
+            name:           "Nombre"
+            street_1:       "Calle 1"
+            street_2:       "Calle 2"
+            city:           "Ciudad"
+            state:          "Estado"
+            post_code:      "CP"
+            parent_id:      "Empresa Matriz"
+            create_html:    "crear ubicación"
