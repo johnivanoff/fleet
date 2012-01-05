@@ -6,9 +6,9 @@
 <% @locations.each do |location| %>
   <li>
     <%= location.name %>
-    <%= link_to 'Show', location %>
-    <%= link_to 'Edit', edit_location_path(location) %>
-    <%= link_to 'Destroy', location, confirm: 'Are you sure?', method: :delete %>
+    <%= link_to t('.show_html'), location %>
+    <%= link_to t('.edit_html'), edit_location_path(location) %>
+    <%= link_to t('.destroy_html'), location, confirm: 'Are you sure?', method: :delete %>
   </li>
 <% end %>
 </ul>

@@ -12,33 +12,33 @@
   <% end %>
 
   <p>
-    <%= f.label t('.name') %>
+    <%= f.label t('.name_html') %>
     <%= f.text_field :name %>
   </p>
 
   <p>
-    <%= f.label t('.street_1') %>
+    <%= f.label t('.street1_html') %>
     <%= f.text_field :street_1 %>
   </p>
   <p>
-    <%= f.label t('.street_2') %>
+    <%= f.label t('.street2_html') %>
     <%= f.text_field :street_2 %>
   </p>
   <p>
-    <%= f.label t('.city') %>
+    <%= f.label t('.city_html') %>
     <%= f.text_field :city %>
   </p>
   <p>
-    <%= f.label t('.state') %>
+    <%= f.label t('.state_html') %>
     <%= f.text_field :state %>
   </p>
   <p>
-    <%= f.label t('.post_code') %> 
+    <%= f.label t('.postcode_html') %> 
     <%= f.text_field :post_code %>
   </p>
 
   <p>
-    <%= f.label t('.parent_id') %>
+    <%= f.label t('.parent_id_html') %>
     <%= collection_select(:location, :parent_id, Location.all, :id, :name, {:include_blank => '---'}) %>
   </p>
   <p>

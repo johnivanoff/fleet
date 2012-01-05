@@ -6,16 +6,19 @@ es:
     locations:
         index:
             new:            "Añadir una nueva ubicación."
-            location_title: "Ubicaciones"
+            location_title: "Locaciones"
+            show_html:      "Mostrar"
+            edit_html:      "Editar"
+            destroy_html:   "Borrar"
         new:
             location_title: "Nueva Ubicación"
-            back_html:      "Atrás"
+            back_html:      "Denuevo"
         form:
-            name:           "Nombre"
-            street_1:       "Calle 1"
-            street_2:       "Calle 2"
-            city:           "Ciudad"
-            state:          "Estado"
-            post_code:      "CP"
-            parent_id:      "Empresa Matriz"
+            name_html:      "Nombre"
+            street1_html:   "Calle 1"
+            street2_html:   "Calle 2"
+            city_html:      "Ciudad"
+            state_html:     "Estado"
+            postcode_html:  "Código Postal"
+            parent_id_html: "la Empresa Matriz"
             create_html:    "crear ubicación"
