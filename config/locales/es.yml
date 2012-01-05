@@ -20,5 +20,5 @@ es:
             city_html:      "Ciudad"
             state_html:     "Estado"
             postcode_html:  "Código Postal"
-            parent_id_html: "la Empresa Matriz"
+            parent_id_html: "Empresa Matriz"
             create_html:    "crear ubicación"
