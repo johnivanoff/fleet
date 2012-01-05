@@ -12,7 +12,14 @@ es:
             destroy_html:   "Borrar"
         new:
             location_title: "Nueva Ubicación"
-            back_html:      "Denuevo"
+            back_html:      "atras"
+        edit:
+            location_title: "Editar Ubicación"
+            back_html:      "atras"
+        show:
+            location_title: "Ubicación"
+            back_html:      "atras"
+            edit_html:      "Editar"
         form:
             name_html:      "Nombre"
             street1_html:   "Calle 1"

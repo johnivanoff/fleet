@@ -13,12 +13,19 @@ en-GB:
         new:
             location_title: "New Location"
             back_html:      "Back"
+        new:
+            location_title: "Edit Location"
+            back_html:      "Back"
+        show:
+            location_title: "Location"
+            back_html:      "Back"
+            edit_html:      "Edit"
         form:    
-            name_html:           "Name"
-            street1_html:       "Address 1"
-            street2_html:       "Address 2"
-            city_html:           "City"
-            state_html:          "County"
+            name_html:      "Name"
+            street1_html:   "Address 1"
+            street2_html:   "Address 2"
+            city_html:      "City"
+            state_html:     "County"
             postcode_html:  "Post Code"
-            parent_id_html:      "Parent Comapny"
+            parent_id_html: "Parent Comapny"
             create_html:    "Create Location"
