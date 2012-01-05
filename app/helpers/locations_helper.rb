@@ -1,15 +1,15 @@
 module LocationsHelper
   
   def edit_link(c)
-    link_to "Edit", edit_location_path(c)
+    link_to "edit_html", edit_location_path(c)
   end
   
   def show_link(c)
-    link_to "Show", location_path(c)
+    link_to t('.show_thml'), location_path(c)
   end
   
   def destroy_link(c)
-    link_to "Destroy", c, :confirm => 'Are you sure?', :method => :delete
+    link_to t('.destroy_html'), c, :confirm => 'Are you sure?', :method => :delete
   end
  
   def completed?(location)
