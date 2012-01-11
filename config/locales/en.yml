@@ -20,6 +20,9 @@ en:
             location_title: "Location"
             back_html:      "Back"
             edit_html:      "Edit"
+            show_html:      "Show"
+            edit_html:      "Edit"
+            destroy_html:   "Destroy"
         form:
             name_html:      "Name"
             street1_html:   "Address 1"
