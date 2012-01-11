@@ -5,7 +5,7 @@
 <ul>
 <% @locations.each do |location| %>
   <li>
-    <%= location.name %>
+    <%= location.name %> (<%= pluralize(location.children.count, "location") %>)
     <%= link_to t('.show_html'), location %>
     <%= link_to t('.edit_html'), edit_location_path(location) %>
     <%= link_to t('.destroy_html'), location, confirm: 'Are you sure?', method: :delete %>

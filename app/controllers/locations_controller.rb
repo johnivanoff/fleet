@@ -7,7 +7,8 @@ class LocationsController < ApplicationController
     if params[:set_locale]
       redirect_to root_path(:locale => params[:set_locale])
     else
-      @locations = Location.all
+      @locations = Location.where(:parent_id => nil)
+      # @locations = Location.all
 
       respond_to do |format|
         format.html # index.html.erb
